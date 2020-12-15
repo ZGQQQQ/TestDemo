@@ -21,8 +21,7 @@ public class Resource {
 		lock.lock();
 		try {
 			while (flag)
-				try {
-					producer_con.await();} catch (InterruptedException e) {}
+				try {producer_con.await();} catch (InterruptedException e) {}
 			this.name = name + count;
 			count++;
 			System.out.println(Thread.currentThread().getName() + "生成了第" + count + "只烤鸭" + "。。。");
@@ -39,8 +38,7 @@ public class Resource {
 		lock.lock();
 		try {
 			while (!flag)
-				try {
-					consumer_con.await();} catch (InterruptedException e) {}
+				try {consumer_con.await();} catch (InterruptedException e) {}
 			System.out.println(Thread.currentThread().getName() + "消费了第" + count + "只烤鸭");
 			flag = false;
 			producer_con.signal();
