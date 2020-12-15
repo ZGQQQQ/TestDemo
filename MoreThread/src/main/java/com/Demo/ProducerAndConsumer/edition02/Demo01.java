@@ -1,4 +1,5 @@
-package com.Demo.ProducerAndConsumer.edition01;
+package com.Demo.ProducerAndConsumer.edition02;
+
 
 public class Demo01 {
 	public static void main(String[] args) {

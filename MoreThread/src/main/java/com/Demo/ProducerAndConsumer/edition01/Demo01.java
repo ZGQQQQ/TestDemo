@@ -1,3 +1,4 @@
+/*
 package com.Demo.ProducerAndConsumer.edition01;
 
 public class Demo01 {
@@ -18,3 +19,4 @@ public class Demo01 {
 		t3.start();
 	}
 }
+*/

@@ -1,8 +1,11 @@
+/*
 package com.Demo.ProducerAndConsumer.edition01;
 
+*/
 /**
  * 资源类
- */
+ *//*
+
 public class Resource {
 	private String name;
 	private int count = 1;
@@ -32,3 +35,4 @@ public class Resource {
 		notifyAll();
 	}
 }
+*/
