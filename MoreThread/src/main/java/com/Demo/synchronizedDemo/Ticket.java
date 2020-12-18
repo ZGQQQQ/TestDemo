@@ -1,7 +1,7 @@
 package com.Demo.synchronizedDemo;
 
 /**
- * 让一个线程在同步函数里卖票；另一个线程在同步代码块里卖票
+ * 让一个线程在 "同步函数" 里卖票；另一个线程在" 同步代码块" 里卖票
  * 若卖票不发生错误，则说明同步函数与同步代码块使用的是同一个锁
  */
 class Ticket implements Runnable {
