@@ -1,4 +1,4 @@
-package com.Demo.DeadLock;
+package com.DeadLock;
 
 public class DeadLockDemo {
     public static String lock01 = "lock01";

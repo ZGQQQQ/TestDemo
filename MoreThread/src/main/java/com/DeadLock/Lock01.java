@@ -1,4 +1,4 @@
-package com.Demo.DeadLock;
+package com.DeadLock;
 
 class Lock01 implements Runnable{
     public void run() {
