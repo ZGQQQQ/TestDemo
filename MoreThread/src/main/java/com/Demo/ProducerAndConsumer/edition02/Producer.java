@@ -1,11 +1,10 @@
-/*
-package com.Demo.ProducerAndConsumer.edition01;
+package com.Demo.ProducerAndConsumer.edition02;
 
-*/
+
+
 /**
  * 生产者
- *//*
-
+ */
 public class Producer implements Runnable{
 	private Resource resource;
 	Producer(Resource resource){
@@ -18,4 +17,3 @@ public class Producer implements Runnable{
 		}
 	}
 }
-*/

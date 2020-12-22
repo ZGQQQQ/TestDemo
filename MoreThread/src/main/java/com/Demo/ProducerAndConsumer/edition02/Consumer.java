@@ -1,11 +1,10 @@
-/*
-package com.Demo.ProducerAndConsumer.edition01;
+package com.Demo.ProducerAndConsumer.edition02;
 
-*/
+
+
 /**
 * 消费者
-*//*
-
+*/
 public class Consumer implements Runnable{
 	private Resource resource;
 	Consumer(Resource resource){
@@ -18,4 +17,3 @@ public class Consumer implements Runnable{
 		}
 	}
 }
-*/

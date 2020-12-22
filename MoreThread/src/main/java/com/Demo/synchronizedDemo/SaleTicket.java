@@ -7,11 +7,7 @@ public class SaleTicket {
 		Thread thread1 = new Thread(ticket);
 		Thread thread2 = new Thread(ticket);
 		thread1.start();
-		try {
-			Thread.sleep(30);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		try {Thread.sleep(30);} catch (InterruptedException e) {e.printStackTrace();}
 		ticket.flag = false;
 		thread2.start();
 	}
