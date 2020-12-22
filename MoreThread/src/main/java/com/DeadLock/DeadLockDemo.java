@@ -9,8 +9,5 @@ public class DeadLockDemo {
         Thread thread2 = new Thread(new Lock02(),"t2线程");
         thread1.start();
         thread2.start();
-
     }
-
-
 }
