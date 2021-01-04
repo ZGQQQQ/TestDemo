@@ -1,22 +1,22 @@
 package com;
 
+import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
+
+
+
+import java.time.temporal.ChronoUnit;
 
 public class Test {
 
 	@org.junit.Test
 	public void r(){
-		Integer hour = LocalDateTime.now().getHour();
-		LocalDateTime beginOfDay = LocalDateTime.of(LocalDate.now(), LocalTime.MIN);
-		System.out.println(beginOfDay);
-		LocalDateTime endOfDay = beginOfDay.plusHours(hour);
-		System.out.println(endOfDay);
+		System.out.println(LocalDateTime.now());
+		System.out.println(LocalDate.now());
 
-		String esSuffix = beginOfDay.format(DateTimeFormatter.ofPattern("yyyyMM"));
-		System.out.println(esSuffix);
+		String s = Timestamp.valueOf(LocalDateTime.now().plus(5L, ChronoUnit.SECONDS)).toString();
+		System.out.println(s);
 
 	}
 }
